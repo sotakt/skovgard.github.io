@@ -1,0 +1,125 @@
+/* article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+} */
+
+body {
+  font: 12px/18px Arial, sans-serif;
+}
+
+.wrapper {
+  /* min-width: 200px; */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+  height: auto;
+  background: #FFE680;
+}
+
+header {
+  background-color: yellow;
+  padding: 2%;
+}
+
+nav {
+  background-color: orangered;
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+  padding-right: 1.1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.content {
+  background-color: rgb(255, 0, 0);
+  padding: 2%;
+}
+
+#flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#image {
+  background-color: azure;
+  width: 49%;
+  /*float: left;*/
+}
+
+#text {
+  background-color: bisque;
+  width: 49%;
+  /*float: left;
+	margin-left: 2%;*/
+}
+
+.clearfix {
+  /*overflow: auto;*/
+}
+
+
+/* flexbox used on product.html + rounded corners */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: bisque;
+  padding: 2%;
+}
+
+
+/* make audio control wider */
+
+audio {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+  height: auto;
+  background: #BFF08E;
+}
+
+footer {
+  background-color: hsla(120, 100%, 50%, 1);
+  padding: 2%;
+  /*clear: both;*/
+}
