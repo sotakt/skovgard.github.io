@@ -1,0 +1,483 @@
+/* Eric Meyer's CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* End of Eric Meyer's CSS Reset */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body {
+  /*font: 12px/18px Arial, sans-serif;*/
+  font: 16px/20px Tahoma, Geneva, sans-serif;
+  background-color: #000;
+}
+
+@media only screen and (min-width: 520px) {
+  body {
+    font: 18px/24px Tahoma, Geneva, sans-serif;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font: 19px/25px Tahoma, Geneva, sans-serif;
+  }
+}
+
+.wrapper {
+  /*min-width: 320px;*/
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5em;
+  background-color: #FFF;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+#header {
+  height: auto;
+  /*background: #FFE680;*/
+  background: #FFF;
+  border-top: solid 1px #000000;
+  border-bottom: solid 1px #000000;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+#header h1 {
+  font-size: 1.8em;
+  line-height: 1em;
+  padding-bottom: 0.2em;
+}
+
+#header h2 {
+  font-size: 0.8em;
+  line-height: 1.4em;
+  padding-bottom: 1em;
+}
+
+#header h1 i {
+  color: #F00;
+  font-size: 1.6em;
+  font-style: italic;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* new navigation --------------------------------------------------------------------------*/
+
+
+/* 
+	Footer List Menu: http://responsivenavigation.net/examples/footer-list/
+	Remember, this is built mobile first using min-width (instead of max-width media queries)
+	We've got two menus being loaded. One in the header, one in the footer.
+	Simple, right? 
+	Give me a shout on twitter if you feel the need: @erickarbe
+*/
+
+#nav {
+  margin-bottom: 0.6em;
+}
+
+#nav ul {
+  display: none;
+  list-style: none;
+  font-weight: bold;
+  text-align: center;
+  background-color: #FFC;
+}
+
+#nav ul li {
+  display: inline-block;
+  text-align: left;
+}
+
+#nav ul li a {
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #444;
+}
+
+#nav .page {
+  background-color: #FFF;
+  border: solid 1px #CCC;
+  padding: 0 0.5em;
+}
+
+#nav ul li a:hover {
+  background-color: #FFE;
+  text-decoration: underline;
+}
+
+.anchor-link {
+  display: block;
+  text-align: center;
+  padding: 0.5em 0.9em;
+  color: #000;
+  background-color: #FFF;
+  text-decoration: none;
+  /*margin: 3px;*/
+  float: right;
+  border: solid 1px #000;
+}
+
+#mobile-nav {
+  display: block;
+  margin-top: 0.6em;
+  border-top: 1px solid #000;
+}
+
+#mobile-nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#mobile-nav ul li {
+  list-style: none;
+  text-align: center;
+}
+
+#mobile-nav ul li a {
+  display: block;
+  padding: 0.7em;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+
+#mobile-nav ul li a:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+
+/* new navigation end -------------------------------------------------------*/
+
+
+/* Main
+-----------------------------------------------------------------------------*/
+
+
+/* http://filamentgroup.com/examples/responsive-images/ */
+
+img {
+  border: 0;
+  width: 100%;
+  display: block;
+}
+
+.rejse {
+  background-color: #FFC;
+  clear: both;
+  margin-bottom: 0.7em;
+}
+
+.rejse h2 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+  color: #F00;
+  font-size: 1.1em;
+}
+
+.rejse h3 {
+  font-size: 1.3em;
+  line-height: 1.1em;
+  padding-bottom: 0.3em;
+}
+
+.rejse h4 {
+  font-size: 0.85em;
+  line-height: 1.15em;
+  padding-bottom: 1em;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+
+.beskrivelse {
+  padding: 0.6em;
+}
+
+aside {
+  border-top: solid 1px #000000;
+  border-bottom: solid 1px #000000;
+  background-color: #FFF;
+  margin-bottom: 0.7em;
+}
+
+aside h2 {
+  padding: 0.6em 0.6em 0 0.6em;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+  height: auto;
+  background-color: #FFC;
+}
+
+.footer h2 {
+  font-size: 0.9em;
+  line-height: 1em;
+  padding-top: 0.4em;
+}
+
+.footer h3 {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: normal;
+  padding-bottom: 0.8em;
+}
+
+
+/* Mobile First:
+Media Queries at the top of the CSS contols the font-size on all screen sizes and all spacing in em's
+Media Queries below controls layout dynamic in relation to different devices 
+-------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) {
+  /* make text float around image */
+  /* http://filamentgroup.com/examples/responsive-images/ */
+  img {
+    width: 50%;
+    margin-right: 1em;
+    padding-bottom: 0.4em;
+    float: left;
+  }
+  .beskrivelse {
+    padding-top: 0;
+  }
+  /* stop floating */
+  aside {
+    float: left;
+  }
+  footer {
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  /* new navigation */
+  #nav ul {
+    display: block;
+  }
+  .anchor-link {
+    display: none;
+  }
+  #mobile-nav {
+    display: none;
+  }
+  /* include banner image http://stackoverflow.com/questions/16563730/need-empty-div-with-background-image-to-force-height-and-must-be-responsive */
+  #top-banner {
+    background-image: url(../images/banner-apollo.jpg);
+    background-size: 100%;
+    width: 100%;
+    padding-top: 18%;
+    height: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* make aside float right */
+  #main {
+    width: 64%;
+    margin: 1%;
+    float: left;
+  }
+  aside {
+    width: 32%;
+    margin: 1%;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #FFC;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* new navigation */
+  #nav ul {
+    display: inline;
+    background-color: #FFF;
+  }
+  #nav {
+    background-color: #FFF;
+    text-align: right;
+    padding-right: 1em;
+    font-size: 0.9em;
+  }
+  #nav ul li a {
+    padding: 0.1em 0.3em;
+  }
+}
