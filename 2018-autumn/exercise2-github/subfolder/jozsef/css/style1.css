@@ -1,0 +1,535 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+
+
+body {
+    font: 12px/18px Helvetica, sans-serif;
+
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #33cc66;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+    max-height: auto;
+    background: #33cc66;
+    z-index: 100;
+}
+
+nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    padding: 0 30px 0 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+    line-height: 70px;
+}
+
+
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition-duration: 0.3s;
+}
+
+
+.logo {
+    float: left;
+    margin: 8px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+#search {
+    display: flex;
+    clear: both;
+    margin: 0 auto;
+    padding: 1.5em 1%;
+}
+
+input {
+    max-width: 180px;
+}
+
+.hopesandtears {
+    display: flex;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+main {
+    clear: both;
+}
+
+.bgimage {
+    background: url(/images/background.jpg);
+}
+
+
+#title {
+    text-align: center;
+    padding: 1.5em 0;
+    margin: 0 auto;
+    max-width: 30em;
+    color: floralwhite;
+    min-height: 20em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#zucchini {
+    padding: 1em;
+}
+
+#cooking {
+    letter-spacing: 5pt;
+}
+
+#easy {
+    letter-spacing: 22.5pt;
+}
+
+.letsgetstarted {
+
+    background-color: #33cc66;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1% 40%;
+    border-radius: 10em;
+}
+
+h1 {
+    font-size: 5em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+h2 {
+
+    text-align: center;
+    font-size: 2.5em;
+    padding: 0.2em;
+
+}
+
+h3 {
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.5em;
+    padding: 4%;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.3em;
+    font-weight: 550;
+}
+
+p {
+    font-size: 0.9em
+}
+
+#justify {
+    text-align: justify;
+}
+
+#nav-icon {
+    display: none;
+}
+
+#mobilepic {
+    display: none;
+}
+
+.pic img {
+    max-width: 45%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 2.5%;
+}
+
+.text {
+
+    text-align: justify;
+    max-width: 45%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 2.5%;
+
+
+}
+
+.pictext {
+    width: auto;
+    height: auto;
+    min-height: 15em;
+    margin: 0 px;
+
+    flex-grow: 1;
+    overflow: hidden;
+
+
+}
+
+#bracket {
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    margin: 3em 0;
+    padding-bottom: 5%;
+
+}
+
+.try {
+    max-width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#myVideo {
+    display: block;
+}
+
+
+#myvideo video {
+
+    display: block;
+
+
+
+}
+
+
+
+
+
+#overlay {
+
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3em;
+    color: floralwhite;
+    text-align: justify;
+    font-size: 2em;
+
+
+
+}
+
+#boxtitle {
+    padding: 1em;
+    line-height: 1em;
+}
+
+#boxp {
+    padding: 1em;
+    line-height: 1.2em;
+}
+
+.ingredients {}
+
+ul {
+    line-height: 2em;
+}
+
+
+#container {
+    display: flex;
+    margin: 2em 2em 2em 2em;
+}
+
+
+ol li {
+    text-align: justify;
+    padding: 2%;
+    list-style: decimal;
+
+}
+
+ol {
+    padding: 1em;
+}
+
+#box {
+    text-align: center;
+    padding: 2em;
+}
+
+#optional {
+    border: 2px solid black;
+    text-align: justify;
+    list-style: none;
+    padding: 0.5em;
+}
+
+#optional h5 {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.5em;
+}
+
+#optional p {
+    padding: 0.5em;
+}
+
+#navigation2 {
+    text-align: center;
+    display: none;
+}
+
+#navigation2 li {
+    padding: 1em;
+    font-size: 2em;
+    border: 1px solid black;
+
+}
+
+#navigation2 a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+    height: auto;
+    background: #BFF08E;
+    clear: both;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.fa {
+    padding: 6px 10px;
+
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.fa:hover {
+    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.fa-facebook {
+    font-size: 3em;
+    padding: 0.5em;
+
+}
+
+.fa-twitter {
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+.fa-instagram {
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+.fa-youtube {
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 760px) {
+
+    nav li {
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    #nav-icon {
+        display: none;
+    }
+
+
+
+    nav a {
+
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    input {
+        max-width: 50px;
+    }
+
+    #search button {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .pic img {
+        float: none;
+        clear: both;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .text {
+        float: none;
+        clear: both;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #container {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+
+
+
+    header {
+        position: alute;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+    #nav-icon {
+        padding: 1.5em;
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    nav {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    input {
+        display: none;
+
+    }
+
+    #search {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+    .try {
+        display: block;
+    }
+
+    .hopesandtears {
+        float: right;
+    }
+
+    #video {
+        display: none;
+    }
+
+    #mobilepic {
+        display: block;
+    }
+
+
+    .pictext {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .pic img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .text {
+
+        display: block;
+        margin: 5% auto;
+        padding: 1em 3em;
+        max-width: 80%;
+    }
+
+    #navigation2 {
+        display: block;
+    }
+
+}
