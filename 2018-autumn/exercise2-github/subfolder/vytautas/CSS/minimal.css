@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block;
+}
+
+body {
+  font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+  background-color: burlywood;
+}
+
+a {
+  color: black;
+  outline: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 18px 0;
+}
+
+#wrapper {
+  width: 80%;
+  min-width: 200px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  border: hsla(106, 100%, 8%, 1.00) 1px solid;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+section li a {
+  display: block;
+}
+
+li a:hover {
+  background-color: hsla(106, 100%, 8%, 0.70);
+  color: #fff;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+#header {
+  background: #fff;
+  text-align: center;
+  padding-top: 20px;
+  border: hsla(106, 100%, 8%, 1.00) 1px solid;
+}
+
+.menu {
+  display: inline;
+  padding-left: 10px;
+}
+
+nav {
+  background-color: #fff;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.content {
+  max-width: 600px;
+  margin: auto;
+}
+
+section {
+  width: 12em;
+  padding: 1em 0 0.5em 0;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  min-height: 11em;
+  margin: 20px 20px 20px;
+  border: hsla(106, 100%, 8%, 1.00) 1px solid;
+  float: left;
+}
+
+.teammaster {
+  background-color: hsla(106, 100%, 8%, 0.10);
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+footer {
+  background-color: #fff;
+  clear: both;
+}
+
+#footer {
+  width: 100%;
+  padding-top: 20px;
+  text-indent: 60px;
+  border: hsla(106, 100%, 8%, 1.00) 1px solid;
+}
+
+#footer h1 {
+  font-size: 1.3em;
+}
