@@ -1,0 +1,201 @@
+body {
+    font: 16px/18px Arial, sans-serif;
+    background-image: url(../images/background.jpg);
+}
+
+h3 {
+    font-weight: 900;
+}
+
+h6 {
+    font-weight: 700;
+}
+
+#wrapper {
+    margin: 0 auto;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+/* navigation
+-----------------------------------------------------------------------------*/
+
+#nav-desktop {
+    display: none;
+}
+
+#nav-icon {
+    text-align: right;
+    font-size: 1.3em;
+    padding: 2%;
+}
+
+#nav-icon a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-mobile {
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+#nav-mobile li {
+    padding: 0.8em;
+    border-bottom: 0.05em solid
+}
+
+#nav-mobile a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* end navigation
+-----------------------------------------------------------------------------*/
+
+h1 {
+    font-size: 3em;
+    font-family: Didot, Times New Roman;
+    color: #fff;
+    padding: 2%;
+
+}
+
+h2 {
+    font-family: Didot, Times New Roman;
+    color: #fff;
+    padding-left: 2%;
+    padding-bottom: 8%;
+}
+
+.headline {
+    margin-top: 15%;
+    margin-left: 4%;
+}
+
+.top {
+    background: url(../images/Marsh_williams_kayak.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+main {
+    margin-top: 5%;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+#des {
+    font-style: italic;
+}
+
+img {
+    width: 100%;
+}
+
+
+.textbox {
+    text-align: center;
+    background-color: #3c668e;
+    opacity: 0.7;
+    color: white;
+    padding: 40px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 8%;
+    margin-left: 15%;
+
+}
+
+.textbox p {
+    font-size: 0.8em;
+}
+
+article {
+    padding: 2%;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 375px) {
+    .textbox {
+        margin-left: 23%;
+    }
+}
+
+@media only screen and (min-width: 478px) {
+
+    nav li {
+        display: inline;
+        padding: 2%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav {
+        display: block;
+        padding: 2%;
+    }
+    
+    #nav-desktop {
+        display: block;
+        padding: 2%;
+    }
+
+    #nav-desktop a {
+        color: #fff;
+    }
+
+    #nav-desktop li {
+        display: inline;
+    }
+
+    #nav-desktop li a:hover {
+        text-decoration: underline;
+    }
+
+    #nav-icon {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: none;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .column1 {
+        width: 46%;
+        float: left;
+    }
+
+    .column2 {
+        width: 46%;
+        float: left;
+    }
+
+    .textbox {
+        margin-left: 25%;
+    }
+}
