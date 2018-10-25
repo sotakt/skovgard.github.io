@@ -1,0 +1,108 @@
+{
+     display: block;
+ }
+
+ body {
+     font: 17px/20px Algerian, sans-serif;
+     background-color: burlywood;
+ }
+
+ header,
+ main,
+ footer {
+     padding: 2%;
+ }
+
+
+ /* Header
+-----------------------------------------------------------------------------*/
+ header {
+     height: auto;
+ }
+
+ #navigation-desktop {
+     display: none;
+ }
+
+ h2 {
+     color: aliceblue;
+     text-align: right;
+     text-decoration: ;
+
+ }
+
+ #navigation-icon {
+     font: 17px/20px Algerian, sans-serif;
+     text-align: center;
+     text-decoration: underline;
+     border: 4px solid black;
+     font-size: 1.2em;
+     padding: 10px;
+ }
+
+ nav a {
+     text-decoration: none;
+     padding: 5px;
+     color: #000;
+ }
+section {
+    display: block;
+    border: 2px solid
+}
+
+ /* Middle
+-----------------------------------------------------------------------------*/
+
+
+
+ #image {
+     
+     color: black;
+     float: right;
+     margin: 40px;
+ }
+
+ img {
+     width: 66%;
+     margin: 50px;
+     float: left;
+     border: 
+
+ }
+
+
+ /* Footer
+-----------------------------------------------------------------------------*/
+ footer {
+     height: auto;
+     border: 5px solid black;
+ }
+
+ @media only screen and (min-width: 300px) {
+
+
+     #image {
+         overflow: auto;
+     }
+
+     #imageandtext {
+         border 2px solid;
+         width: 76%;
+         float:right;
+         margin-right: 0%;
+     }
+
+ }
+
+
+
+ @media only screen and (min-width: 700px) {
+     header {}
+
+     #flex {
+         display: flex;
+     }
+
+     #image {
+         width: 50%;
+     }
