@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Liberi - Ultras Magazine</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/article.css">
+    <script src="../../script/js.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div class="video-player-background hide" onclick="hidePlayer()" id="menubackg">
+
+        <div class="video-player">
+            <a class="close" onclick="hidePlayer()">CLOSE</a>
+            <iframe id="player" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+       <div class="toggle" onclick="menutoggled()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../articles.html">Articles</a></li>
+                <li><a href="../../reports.html">Reports</a></li>
+                <li><a href="../../interviews.html">Interviews</a></li>
+                <li><a href="../../retro.html">Retro</a></li>
+                <li><a href="../../fights.html">Fights</a></li>
+                <li><a href="https://midgard-shop.com/">Shop</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <header>
+
+        <a href="../../index.html" id="logo">liberi.</a>
+        <div class="toggle" onclick="menutoggled()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a>Categories</a>
+                    <ul>
+                        <li><a href="../../articles.html">Articles</a></li>
+                        <li><a href="../../reports.html">Reports</a></li>
+                        <li><a href="../../interviews.html">Interviews</a></li>
+                        <li><a href="../../retro.html">Retro</a></li>
+                        <li><a href="../../fights.html">Fights</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="https://midgard-shop.com/">Shop</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+
+
+
+
+
+
+        <article>
+
+            <div class="main-article-wrapper">
+                <div class="main-article-heading">
+
+                    <h1>Levski Sofia vs. Slavia Sofia 07.10.2018</h1>
+                    <h2>The oldest Sofia Derby!</h2>
+
+                </div>
+                <p><i class="far fa-user"></i> ADMIN / <i class="far fa-folder"></i> REPORTS / <i class="far fa-clock"></i> 08.10.2018 / Images: SectorBvideo, Block 5, Sportal.bg</p>
+                <img src="../../images/levski-slavia/thumbnail.jpg" alt="">
+
+
+
+            </div>
+            <section>
+                <h3>Over 10 000 People and pyro from Levski fans!</h3>
+                <p class="article-paragraph paragraph">The oldest Sofia derby was played in the Georgi Asparuhov Stadium. Levski Sofia is in the first place and this game was very important after the derby win last week. The supporters almost filled the stands with over 10 000 people attending the game. Once again Ultras Levski are divided in two parts. Sofia West and the majority stay in the traditional stand Sector B while Sout Division were placed in Block 5 in Sector A. They were supported also by other friendly groups such as Levski&Techno, Ruse and others who don't approve the state of Sector B at the moment.  </p>
+            </section>
+            <section>
+                <h3>Levski Sofia</h3>
+                
+                <figure>
+                    <img src="../../images/levski-slavia/1.jpg" alt="">
+                    <img src="../../images/levski-slavia/2.jpg" alt="">
+                     <img src="../../images/levski-slavia/3.jpg" alt="">
+                    <img src="../../images/levski-slavia/4.jpg" alt="">
+                    <img src="../../images/levski-slavia/5.jpg" alt="">
+                </figure>
+                <iframe  src="https://www.youtube.com/embed/ErjGB2YiXg4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h3>Slavia Sofia</h3>
+                
+                <figure>
+                    <img src="../../images/levski-slavia/6.jpg" alt="">
+                    
+                </figure>
+
+            </section>
+            
+        </article>
+
+        <aside>
+
+            <h4>Latest Videos</h4>
+            <ul>
+                <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/9T4NsgG0E28?rel=0&amp;showinfo=0">
+                        <div class="thumbnail"><img src="../../images/SectorBThumbnail.jpg" alt="Sector B Levski Sofia">
+                            <div class="play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-caption">
+                            Sector B Vs CSKA-Sofia
+                        </div>
+                    </a>
+                </li>
+                <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/j2bEXN-uFZs?rel=0&amp;showinfo=0">
+                        <div class="thumbnail"><img src="../../images/SectorGThumbnail.jpg" alt="Sector G CSKA-SOFIA">
+                            <div class="play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-caption">
+                            Sector G Vs Levski
+                        </div>
+                    </a>
+                </li>
+                <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/wK76r3wlVfE?rel=0&amp;showinfo=0">
+                        <div class="thumbnail"><img src="../../images/OlympiakosThumbnail.jpg" alt="Olympiakos Pyroshow vs PAOK">
+                            <div class="play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-caption">
+                            Olympiakos Pyroshow VS PAOK
+                        </div>
+                    </a>
+                </li>
+                <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/eR3ryB-8BDE?rel=0&amp;showinfo=0">
+                        <div class="thumbnail"><img src="../../images/LeverkusenThumbnail.jpg" alt="">
+                            <div class="play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-caption">
+                            Bayer Leverkusen Incredible tifo vs BVB
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <div class="social">
+            <a class="fb" href=""><i class="fab fa-facebook-f"></i><span>Follow Us!</span></a>
+        </div>
+        <div class="copyright">
+            <p>LIBERI.COM ALL RIGHTS RESERVED &copy; 2018</p>
+        </div>
+
+        <div class="logo">
+
+        </div>
+    </footer>
+</body>
+
+</html>
