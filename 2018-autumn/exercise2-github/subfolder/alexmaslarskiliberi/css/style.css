@@ -1,0 +1,654 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: black;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*NAVIGATION BAR*/
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: .5s;
+    padding: 0 5%;
+    padding-top: 1%;
+
+}
+
+
+
+#logo {
+    color: black;
+    font-size: 3em;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: .5s;
+    padding: 15px;
+}
+
+
+#logo:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+nav a {
+
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: black;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: white;
+    transition: 0.5s;
+    background-color: black;
+}
+
+
+nav ul li {
+    display: inline-block;
+    padding: 15px 0;
+    position: relative;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 0;
+    z-index: 99;
+    transition: 5s;
+}
+
+nav ul ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.toggle {
+    display: none;
+    color: black;
+    font-size: 1.6em;
+    box-sizing: border-box;
+    padding: 15px 0;
+}
+
+.nav-mobile {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 999;
+}
+
+.nav-mobile nav {
+    padding: 10%;
+}
+
+.nav-mobile nav ul {
+    height: 100%;
+    text-align: center;
+}
+
+.nav-mobile nav ul li {
+    display: block;
+}
+
+.nav-mobile a {
+    color: white;
+    font-size: 2em;
+}
+
+.nav-mobile .toggle {
+    text-align: right;
+    padding: 1% 5%;
+}
+.nav-mobile .toggle i{
+    padding-top: 17px;
+    color: white;
+}
+.toggled{
+    display: block;
+}
+/*NAVIOGATION BAR END*/
+/*FEATURED ARTICLES START*/
+main {
+    padding: 0 5%;
+    padding-top: 3%;
+}
+
+.featured-articles {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+
+}
+
+.main-article {
+    width: 65%;
+    position: relative;
+}
+
+.main-article-wrapper {
+    height: 100%;
+    background-color: black;
+}
+
+.main-article-wrapper img {
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+
+.main-article-wrapper img:hover {
+    opacity: 1;
+
+}
+
+.main-article-wrapper p {
+    color: gray;
+}
+
+.main-article-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main-article-text h2 {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    line-height: 1.2em;
+    text-align: right;
+}
+
+.main-article-text h2:hover {
+    color: #ffc107;
+}
+
+.category-text-main {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.category-text-main h3 {
+    background-color: #000000;
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+    line-height: 1.2em;
+    text-align: right;
+    border: 3px solid #ffc105;
+    letter-spacing: 2px;
+}
+
+.category-text-main h3:hover {
+    color: #ffc105;
+    transition: .5s;
+}
+
+#shop-card {
+    width: 25%;
+    position: relative;
+    background-image: url('../images/midgard.png');
+    background-size: cover;
+}
+
+#shop-card-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#shop-card-text h2 {
+    background-color: black;
+    color: #ffc107;
+    font-size: 2em;
+    padding: 10px;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+#shop-card-wrapper {
+    height: 100%;
+}
+
+
+#shop-card-btn {
+    text-align: center;
+    margin-top: 50%;
+
+}
+
+#shop-card-btn a {
+    padding: 3% 20%;
+    border: 5px solid white;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+#shop-card-btn a:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+/*END OF FEATURED ARTICLES*/
+/*POSTS AND CONTENT START*/
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+
+}
+
+#moreContent {
+    margin-top: 0;
+}
+
+#latest-posts {
+    width: 65%;
+    padding-top: 1%;
+
+}
+
+#latest-posts h4 {
+    text-align: center;
+    font-size: 2em;
+    color: gray;
+    margin-bottom: 3%;
+}
+
+#latest-posts article {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+#latest-posts article img {
+    max-width: 400px;
+}
+
+.article-text-wrap {
+    padding-left: 1%;
+    position: relative;
+}
+
+.article-text-wrap h2 {
+    margin: 2% 0;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.article-text-wrap h2 a {
+    color: black;
+}
+
+.article-text-wrap h2 a:hover {
+    color: #ffc107;
+    transition: .2s;
+}
+
+.article-paragraph {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+}
+
+.category-text a {
+    color: black;
+    background-color: #ffc105;
+    padding: 2px;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    text-align: left;
+
+}
+
+.category-text:hover {
+    color: #ffc105;
+    transition: .5s;
+}
+
+.article-info {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.article-bottom-text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.article-bottom-text a {
+    color: gray;
+}
+
+.article-bottom-text a:hover {
+    color: black;
+}
+
+#see-more {
+    text-align: center;
+    padding: 2%;
+}
+
+#see-more a {
+    cursor: pointer;
+}
+
+
+/*ASIDE AND FEATURED VIDEOS START*/
+aside {
+    width: 25%;
+    background-color: whitesmoke;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+#moreContent aside {
+    padding-top: 0;
+}
+
+aside h4 {
+    text-align: center;
+    font-size: 2em;
+    color: gray;
+    margin-bottom: 5%;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.thumbnail .play {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 2em;
+}
+
+
+.video-caption {
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.video-caption:hover {
+    color: #ffc105;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    cursor: pointer;
+}
+
+.thumbnail:hover > .play {
+    color: #ffc105;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/*FEATURED VIDEOS END*/
+/*VIDEO PLAYER START*/
+.video-player-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+}
+
+.video-player {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    margin: 10vh 10vw;
+    padding: 1% 0;
+    z-index: 99;
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.close {
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    background-color: black;
+    padding: 0 2%;
+}
+
+.close:hover {
+    background-color: #ffc105;
+    color: black;
+    transition: .3s;
+}
+
+#player {
+    width: 100%;
+    height: 100%;
+}
+
+/*VIDEOPLAYER END*/
+/*FOOTER START*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    ;
+    background-color: black;
+    padding: 1% 1%;
+    box-sizing: border-box;
+
+}
+
+footer .logo {
+    width: 25%;
+    background-image: url('../images/logo-footer.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+footer .copyright {
+    width: 25%;
+    text-align: center;
+}
+
+footer .copyright p {
+    color: white;
+}
+
+footer .social {
+    width: 25%;
+    text-align: center;
+}
+
+footer .social a {
+    font-size: 2em;
+    color: white;
+}
+
+footer .social a:hover > span {
+    color: #ffc107;
+}
+
+footer .social span {
+    color: white;
+    display: block;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+
+    /*    Featured Articles*/
+    .featured-articles {
+        display: block;
+    }
+
+    .main-article {
+        width: 100%;
+    }
+
+    .main-article-wrapper p {
+        position: absolute;
+        top: 0;
+        color: white;
+    }
+
+    #shop-card {
+        width: 100%;
+        height: 200px;
+        margin-top: 5%;
+        background-image: url('../images/midgard-small.jpg');
+        background-position: center;
+    }
+
+    #shop-card-wrapper {
+        padding: 10% 0;
+    }
+
+    #shop-card-btn {
+        margin: 0;
+    }
+
+    /*    Content / Latest Posts*/
+    .content {
+        display: block;
+    }
+
+    #latest-posts {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    aside ul {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #moreContentAside {
+        display: block;
+    }
+}
+
+@media(max-width:700px) {
+    .navbar {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .main-article-text {
+        width: 100%;
+    }
+    .category-text-main h3{
+        background-color: transparent;
+        border: none;
+        font-size: 0.8em;
+    }
+    #shop-card{
+        height: 150px;
+    }
+    #shop-card-text h2{
+        font-size: 1em;
+    }
+    .main-article-wrapper p{
+        font-size: 0.8em;
+    }
+
+    .main-article-text h2 {
+        font-size: 1.5em;
+        background-color: transparent;
+        text-align: center;
+    }
+
+    #latest-posts article {
+        display: block;
+        background-color: whitesmoke;
+        border-bottom: 2px solid #ffc105;
+    }
+
+    #latest-posts article img {
+        max-width: none;
+        width: 100%;
+    }
+
+    aside ul {
+        width: 100%;
+    }
+
+    footer .logo {
+        display: none;
+    }
+
+    footer .social {
+        width: 50%;
+    }
+
+    footer .copyright {
+        width: 50%;
+    }
+}

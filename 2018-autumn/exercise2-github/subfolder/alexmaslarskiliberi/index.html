@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Liberi - Ultras Magazine</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/js.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div class="video-player-background hide" onclick="hidePlayer()" id="menubackg">
+
+        <div class="video-player">
+            <a class="close" onclick="hidePlayer()">CLOSE</a>
+            <iframe id="player" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+       <div class="toggle" onclick="menutoggled()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="interviews.html">Interviews</a></li>
+                <li><a href="retro.html">Retro</a></li>
+                <li><a href="fights.html">Fights</a></li>
+                
+                <li><a href="https://midgard-shop.com/">Shop</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <header>
+
+        <a href="index.html" id="logo">liberi.</a>
+        <div class="toggle" onclick="menutoggled()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a>Categories</a>
+                    <ul>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="reports.html">Reports</a></li>
+                        <li><a href="interviews.html">Interviews</a></li>
+                        <li><a href="retro.html">Retro</a></li>
+                        <li><a href="fights.html">Fights</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="https://midgard-shop.com/">Shop</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <div class="featured-articles">
+            <section class="main-article">
+                <div class="main-article-wrapper">
+                    <a href="categories/reports/levski-cska-sofia-29.09.html">
+                        <img src="images/levski-cska/thumbnail.jpg" alt="">
+                    </a>
+                    <div class="category-text-main">
+                        <a href="reports.html">
+                            <h3><i class="far fa-folder"></i> REPORTS</h3>
+                        </a>
+
+                    </div>
+                    <div class="main-article-text">
+                        <a href="categories/reports/levski-cska-sofia-29.09.html">
+                            <h2>Levski Sofia - CSKA-Sofia 29.09.2018</h2>
+                        </a>
+
+                    </div>
+                    <p><i class="far fa-user"></i> ADMIN / <i class="far fa-folder"></i> REPORTS / <i class="far fa-clock"></i> 01.10.2018</p>
+                </div>
+
+            </section>
+            <section id="shop-card">
+                <div id="shop-card-wrapper">
+
+                    <div id="shop-card-btn">
+                        <a href="https://midgard-shop.com/">
+                            SHOP
+                        </a>
+                    </div>
+
+                    <div id="shop-card-text">
+                        <h2>AUTUMN COLLECTION 18'</h2>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="content">
+            <section id="latest-posts">
+                <h4>Latest Posts</h4>
+                <article>
+                    <a href="categories/reports/levski-slavia-07.10.html"><img src="images/levski-slavia/thumbnail-small.jpg" alt=""></a>
+
+                    <div class="article-text-wrap">
+                        <h3 class="category-text"> <a href="reports.html"><i class="far fa-folder"></i> REPORTS</a></h3>
+                        <h2><a href="categories/reports/levski-slavia-07.10.html">Levski Sofia vs. Slavia Sofia 07.10.2018</a></h2>
+                        <p class="article-info"><i class="far fa-user"></i> ADMIN / <i class="far fa-clock"></i> 08.10.2018</p>
+                        <p class="article-paragraph">The oldest Sofia Derby! More than 10 000 people in attendance.</p>
+                    </div>
+
+                </article>
+                <article>
+                    <a href="categories/articles/modern-ultras.html"><img src="images/modern-ultras/thumbnail-small.jpg" alt=""></a>
+
+                    <div class="article-text-wrap">
+                        <h3 class="category-text"> <a href="articles.html"><i class="far fa-folder"></i> ARTICLES</a></h3>
+                        <h2><a href="categories/articles/modern-ultras.html">The change to modern football and how it effects the fans.</a></h2>
+                        <p class="article-info"><i class="far fa-user"></i> ADMIN / <i class="far fa-clock"></i> 04.10.2018</p>
+                        <p class="article-paragraph">How football clubs are trying to turn the game into business, and how do the fans react to that.</p>
+                    </div>
+
+                </article>
+                <article>
+                    <a href="categories/fights/olympiakos-vs-police-29-09.html"><img src="images/olympiakos-police/thumbnail-small.jpg" alt=""></a>
+
+                    <div class="article-text-wrap">
+                        <h3 class="category-text"> <a href="fights.html"><i class="far fa-folder"></i> FIGHTS</a></h3>
+                        <h2><a href="categories/fights/olympiakos-vs-police-29-09.html">Riots after Olympiakos - PAOK 29.09.2018</a></h2>
+                        <p class="article-info"><i class="far fa-user"></i> ADMIN / <i class="far fa-clock"></i> 01.10.2018</p>
+                        <p class="article-paragraph">Olympiakos fans vs police after their team lost against rivals PAOK</p>
+                    </div>
+
+                </article>
+
+                <div id="see-more">
+                    <a onclick="showMore()">OLDER POSTS</a>
+                </div>
+                <div class="hide" id="moreContent">
+
+
+                    <article>
+                        <a href="categories/reports/levski-cska-sofia-29.09.html"><img src="images/levski-cska/thumbnail-small.jpg" alt=""></a>
+
+                        <div class="article-text-wrap">
+                            <h3 class="category-text"> <a href="reports.html"><i class="far fa-folder"></i> REPORTS</a></h3>
+                            <h2><a href="categories/reports/levski-cska-sofia-29.09.html">Levski Sofia vs. CSKA-Sofia 29.09.2018</a></h2>
+                            <p class="article-info"><i class="far fa-user"></i> ADMIN / <i class="far fa-clock"></i> 01.10.2018</p>
+                            <p class="article-paragraph">Derby in Bulgaria!</p>
+                        </div>
+
+                    </article>
+                    <article>
+                        <a href="categories/interviews/blue-hunta.html"><img src="images/blue-hunta/thumbnail-small.jpg" alt=""></a>
+
+                        <div class="article-text-wrap">
+                            <h3 class="category-text"> <a href="interviews.html"><i class="far fa-folder"></i> INTERVIEWS</a></h3>
+                            <h2><a href="categories/interviews/blue-hunta.html">Interview with Blue Hunta Levski Sofia</a></h2>
+                            <p class="article-info"><i class="far fa-user"></i> ADMIN / <i class="far fa-clock"></i> 29.09.2018</p>
+                            <p class="article-paragraph">About the group, activities and relations with other groups</p>
+                        </div>
+
+                    </article>
+                    <article>
+                        <a href="categories/interviews/ferencvaros-capo.html"><img src="images/ferencvaros-capo/thumbnail-small.jpg" alt=""></a>
+
+                        <div class="article-text-wrap">
+                            <h3 class="category-text"> <a href="interviews.html"><i class="far fa-folder"></i> INTERVIEWS</a></h3>
+                            <h2><a href="categories/interviews/ferencvaros-capo.html">Interview with Green Dragons Ferencvaros' capo</a></h2>
+                            <p class="article-info"><i class="far fa-user"></i> ADMIN / <i class="far fa-clock"></i> 25.09.2018</p>
+                            <p class="article-paragraph">Why they decided to boycott and why they returned last week?</p>
+                        </div>
+
+                    </article>
+                    <article>
+                        <a href="categories/retro/levski-barcelona-2006.html"><img src="images/levski-barcelona-old-school/thumbnail-small.jpg" alt=""></a>
+
+                        <div class="article-text-wrap">
+                            <h3 class="category-text"> <a href="retro.html"><i class="far fa-folder"></i> RETRO</a></h3>
+                            <h2><a href="categories/retro/levski-barcelona-2006.html">Levski Sofia vs Barcelona (CL) 22.11.2006</a></h2>
+                            <p class="article-info"><i class="far fa-user"></i> ADMIN / <i class="far fa-clock"></i> 20.09.2018</p>
+                            <p class="article-paragraph">Levski fans with pyro, bombs and incredible support</p>
+                        </div>
+
+                    </article>
+
+
+                </div>
+            </section>
+
+            <aside>
+                <h4>Latest Videos</h4>
+                <ul>
+                    <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/9T4NsgG0E28?rel=0&amp;showinfo=0">
+                            <div class="thumbnail"><img src="images/SectorBThumbnail.jpg" alt="Sector B Levski Sofia">
+                                <div class="play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-caption">
+                                Sector B Vs CSKA-Sofia
+                            </div>
+                        </a>
+                    </li>
+                    <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/j2bEXN-uFZs?rel=0&amp;showinfo=0">
+                            <div class="thumbnail"><img src="images/SectorGThumbnail.jpg" alt="Sector G CSKA-SOFIA">
+                                <div class="play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-caption">
+                                Sector G Vs Levski
+                            </div>
+                        </a>
+                    </li>
+                    <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/wK76r3wlVfE?rel=0&amp;showinfo=0">
+                            <div class="thumbnail"><img src="images/OlympiakosThumbnail.jpg" alt="Olympiakos Pyroshow vs PAOK">
+                                <div class="play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-caption">
+                                Olympiakos Pyroshow VS PAOK
+                            </div>
+                        </a>
+                    </li>
+                    <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/eR3ryB-8BDE?rel=0&amp;showinfo=0">
+                            <div class="thumbnail"><img src="images/LeverkusenThumbnail.jpg" alt="">
+                                <div class="play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-caption">
+                                Bayer Leverkusen Incredible tifo vs BVB
+                            </div>
+                        </a>
+                    </li>
+                    <div class="hide" id="moreContentAside">
+                        <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/MOj8h5Ptfu8?rel=0&amp;showinfo=0">
+                                <div class="thumbnail"><img src="images/UltrasWayThumbnail.jpg" alt="">
+                                    <div class="play">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-caption">
+                                    Ultras - Way of Life
+                                </div>
+                            </a>
+                        </li>
+                        <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/N6_R6VuT9cg?rel=0&amp;showinfo=0">
+                                <div class="thumbnail"><img src="images/WienerThumbnail.jpg" alt="">
+                                    <div class="play">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-caption">
+                                    Fights at the 327th Wiener Derby
+                                </div>
+                            </a>
+                        </li>
+                        <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/YQSwCpbLAXA?rel=0&amp;showinfo=0">
+                                <div class="thumbnail"><img src="images/LevskiBarcaThumbnail.jpg" alt="">
+                                    <div class="play">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-caption">
+                                    Ultras Levski Vs Barcelona 22.11.2006
+                                </div>
+                            </a>
+                        </li>
+                        <li><a onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/R5PYi6loMy0?rel=0&amp;showinfo=0">
+                                <div class="thumbnail"><img src="images/SectorBActionThumbnail.jpg" alt="">
+                                    <div class="play">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-caption">
+                                    Sector B Action, baby (2014 mashup)
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+            </aside>
+
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div class="social">
+            <a class="fb" href=""><i class="fab fa-facebook-f"></i><span>Follow Us!</span></a>
+        </div>
+        <div class="copyright">
+            <p>LIBERI.COM ALL RIGHTS RESERVED &copy; 2018</p>
+        </div>
+
+        <div class="logo">
+
+        </div>
+    </footer>
+</body>
+
+</html>
